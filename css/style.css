@@ -24,6 +24,14 @@ body {
 
 }
 
+.title_intro_prev_up {
+    text-transform: uppercase;
+}
+
+.title_intro_prev_down {
+    text-transform: uppercase;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -121,6 +129,13 @@ body {
     color: #FFFFFF;
 }
 
+.referring {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .for_women {
     background-image: url(../img/for_women.jpg);
 }
@@ -190,7 +205,10 @@ body {
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
-    
+}
+
+.upper {
+    text-transform: uppercase;
 }
 
 .categories_sell {
@@ -201,6 +219,7 @@ body {
     line-height: 29px;
     text-align: center;
     color: #F16D7F;
+    text-transform: uppercase;
 }
 
 .products {
@@ -361,6 +380,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../img/photo_subscribe.jpg);
+    background-size: 100%;
 }
 
 .subscribe_wrap {
@@ -368,7 +388,6 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 448px;
-
 }
 
 .subscribe_class {
@@ -421,6 +440,7 @@ body {
     text-align: center;
     color: #222224;
     margin-bottom: 32px;
+    text-transform: uppercase;
 }
 
 .subscribe_text_wrap {
@@ -431,6 +451,7 @@ body {
     line-height: 29px;
     text-align: center;
     color: #222224;
+    text-transform: uppercase;
 }
 
 .subscribe_input {
@@ -482,6 +503,7 @@ body {
     display: flex;
     justify-content: space-around;
     width: 147px;
+    list-style: none;
 }
 
 .social_net {
