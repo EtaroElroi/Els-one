@@ -17,29 +17,41 @@
 <body>
 
     <header class="header">
-        <div class="main__wrap-center">
-            <div class="header__menu">
-                <div class="header__menu-left">
-                    <a href="/index.html" class="header__menu-logo-link"><img src="img/logo.png" alt="logo"></a>
-                    <a href="#" class="header__menu-search-link"><img src="img/search.png" alt="search"></a>
-                </div>
-                <div class="header__menu-right">
-                    <a href="#" class="header__menu-menu-link"><img src="img/menu.png" alt="menu"></a>
-                    <a href="#" class="header__menu-account-link"><img src="img/account.png" alt="account"></a>
-                    <a href="#" class="header__menu-shop-link"><img src="img/shop.png" alt="shop"></a>
+        <div class="wrapper">
+            <div class="header__wrap">
+                <div class="header__menu">
+                    <div class="header__menu-icon-search">
+                        <a href="/index.html" class="header__menu-logo-link"><img src="img/logo.png" alt="logo"></a>
+                        <a href="#" class="header__menu-search-link"><img src="img/search.png" alt="search"></a>
+                    </div>
+                    <div class="header__menu-burger">
+                        <div class="header__burger">
+                            <div class="header__burger-icon">
+                                <input type="checkbox" id="check-menu">
+                                <label for="check-menu" class="header__burger-label"></label>
+                                <div class="burger-line header__burger--first"></div>
+                                <div class="burger-line header__burger--second"></div>
+                                <div class="burger-line header__burger--third"></div>
+                                <div class="burger-line header__burger--fourth"></div>
+                            </div>
+                        </div>
+                        <a href="/registration.html" class="header__menu-account-link"><img src="img/account.png"
+                                alt="account"></a>
+                        <a href="#" class="header__menu-shop-link"><img src="img/shop.png" alt="shop"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <section class="registration">
-        <div class="main__wrap-center registration-new">
+        <div class="wrapper registration-new">
             <h1 class="registration-new__title">registration</h1>
         </div>
     </section>
 
     <section class="registration__member">
-        <div class="main__wrap-center registration__member-new">
+        <div class="wrapper registration__member-new">
             <div class="registration__member-new--left">
                 <form action="#" class="registration__member-form">
                     <fieldset class="registration__member-field">
@@ -112,7 +124,7 @@
 
     <footer>
         <section class="subscribe">
-            <div class="main__wrap-center subscribe__wrap">
+            <div class="wrapper subscribe__wrap">
                 <div class="subscribe__slogan intersect">
                     <p class="subscribe__slogan-title">
                     <h3 class="subscribe__slogan-description">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
@@ -135,12 +147,12 @@
         </section>
 
         <section class="features">
-            <div class="main__wrap-center features__wrap">
+            <div class="wrapper features__wrap">
                 <div class="features__copyright">
                     <p>&copy 2021 Brand All Rights Reserved.</p>
                 </div>
                 <ul class="features__social-list">
-                    <li><a href="#" class="features__social-item rel">
+                    <li><a href="#" class="features__social-item">
                             <svg width="9" height="15" viewBox="0 0 9 15" class="features__social-fresh"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path

@@ -8,7 +8,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.main__wrap-center {
+.wrapper {
     width: 1140px;
     margin: 0 auto;
 }
@@ -29,18 +29,17 @@ body {
     justify-content: space-between;
     height: 75px;
     background: #222222;
-    position: sticky;
     z-index: 2;
     width: 100%;
     top: 0;
 }
 
 .intro {
+    background-color: #F1E4E6;
     height: 764px;
 }
 
 .intro-opacity {
-    background-color: #F1E4E6;
     height: 764px;
     position: relative;
 }
@@ -133,7 +132,7 @@ body {
     margin-bottom: 45.5px;
 }
 
-.intro__title--span-up {
+.intro__title--big {
     font-family: Lato;
     font-style: normal;
     font-weight: 900;
@@ -143,7 +142,7 @@ body {
     text-transform: uppercase;
 }
 
-.intro__title--span-down {
+.intro__title--little {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -153,7 +152,7 @@ body {
     text-transform: uppercase;
 }
 
-.intro__title--span-down-black {
+.intro__title--brand-color {
     color: #F16D7F;
 }
 
@@ -164,7 +163,7 @@ body {
 
 }
 
-.header__menu-right {
+.header__menu-burger {
     display: flex;
     align-items: center;
 }
@@ -295,11 +294,11 @@ body {
     color: #FFFFFF;
 }
 
-.categories__menu-upper {
+.categories__menu-promotion {
     text-transform: uppercase;
 }
 
-.categories__menu-down-text {
+.categories__menu--brand-color {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -415,6 +414,14 @@ body {
     border: 2px solid #F26376;
     padding: 14.5px 38.5px 13.5px 38.5px;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.product__button-catalog-link:hover,
+.product__button-catalog-link:focus {
+    background-color: #F26376;
+    color: #FFFFFF;
+    outline: none;
 }
 
 .advantages {
@@ -624,7 +631,12 @@ body {
 .features__social-item:focus {
     background: #F16D7F;
     outline: none;
+    fill: #FFFFFF;
 
+}
+
+.features__social-fresh ~ {
+    fill: #000000;
 }
 
 .registration {
@@ -715,10 +727,6 @@ body {
 
 #email {
     margin-bottom: 20.5px;
-}
-
-label, input {
-    display: block;
 }
 
 fieldset {
@@ -893,14 +901,6 @@ button:active {
     width: 90%;
 }
 
-.features__social-fresh {
-    fill: #000000;
-}
-
-.features__social-fresh:hover {
-    fill: #FFFFFF;
-}
-
 .product__item-opacity:hover .product__item-button-card,
 .product__item-opacity:hover::before {
     display: block;
@@ -908,7 +908,6 @@ button:active {
 }
 
 .product__item-button-card--link {
-    text-transform: uppercase;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -916,15 +915,16 @@ button:active {
     line-height: 19px;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
-    padding: 16px 29px 17px 29px;
+    padding-left: 40px;
     text-decoration: none;
     background: none;
     outline: none;
     transition: all 0.3s ease;
-}
-
-.burger-wrap:hover .intro-opacity::before {
-    opacity: 1;
+    background-image: url(../img/product__item-button-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    width: 138px;
+    height: 40px;
 }
 
 .burger {
