@@ -21,3 +21,42 @@ body {
 .rel {
     position: relative;
 }
+
+[type="radio"] {
+    display: none;
+}
+
+[type="text"]:hover,
+[type="text"]:focus {
+    border: 1px solid $pink-dark;
+}
+
+[type="password"]:hover,
+[type="password"]:focus {
+    border: 1px solid $pink-dark;
+}
+
+[type="email"]:hover,
+[type="email"]:focus {
+    border: 1px solid $pink-dark;
+}
+
+#check-menu {
+    display: none;
+}
+
+button:active {
+    box-shadow: 0px 0px 14px 0px rgba(34, 60, 80, 0.2);
+}
+
+fieldset {
+    border: none;
+}
+
+#first-name {
+    margin-bottom: 20.5px;
+}
+
+#email {
+    margin-bottom: 20.5px;
+}

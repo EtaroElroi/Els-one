@@ -1,0 +1,122 @@
+.subscribe {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/photo_subscribe.jpg);
+    background-size: 100%;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 448px;
+    }
+
+    &__intersect {
+        background-position: center 0;
+        background-image: url(../img/intersect.png);
+    }
+
+    &__slogan {
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        height: 255px;
+        width: 359.45px;
+    }
+
+    &__slogan-title {
+        display: flex;
+        align-items: center;
+        margin-top: 126px;
+    }
+
+    &__slogan-description {
+        text-align: center;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: $darkGrey-bkg;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 557px;
+        height: 137px;
+    }
+
+    &__form-title {
+        text-align: center;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: $darkGrey-bkg;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+    }
+
+    &__form-description {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $darkGrey-bkg;
+        text-transform: uppercase;
+    }
+
+    &__form-input {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__form-in {
+        width: 256px;
+        height: 49px;
+        padding-left: 22px;
+        border: none;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: $fresh-grey;
+        outline: none;
+
+        &:hover,
+        &:focus {
+            border: none;
+        }
+
+        &::placeholder {
+            transition: all 0.4s ease;
+        }
+
+        &:hover::placeholder {
+            color: transparent;
+            width: 90%;
+        }
+    }
+
+    &__form-go {
+        width: 100px;
+        background: $pink-light;
+        border: none;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: $white-bkg;
+        user-select: none;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            border: 1px solid $pink-dark;
+            opacity: 0.9;
+            outline: none;
+        }
+    }
+}

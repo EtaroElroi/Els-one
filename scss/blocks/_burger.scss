@@ -1,75 +1,64 @@
-.burger-line {
-    display: block;
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    width: 32px;
-    height: 3px;
-    background-color: #E8E8E8;
-    transition: all 0.5s ease;
-}
-
 .burger {
     display: flex;
     justify-content: flex-end;
     position: relative;
     top: 75px;
-}
 
-.burger__menu {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 37px;
-}
+    &__menu {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 37px;
+    }
 
-.burger-item a {
-    display: flex;
-    margin-left: 21px;
-    text-decoration: none;
-    color: #6F6E6E;
-    outline: none;
-}
+    &__item a {
+        display: flex;
+        margin-left: 21px;
+        text-decoration: none;
+        color: $smoke-grey;
+        outline: none;
+    }
 
-.burger-item a:hover,
-.burger-item a:focus {
-    color: #222224;
-}
+    &__item a:hover,
+    &__item a:focus {
+        color: $darkGrey-bkg;
+    }
 
-.burger-item--span {
-    text-transform: uppercase;
-    margin-left: 34px;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 17px;
-    margin-bottom: 4px;
-}
+    &__item--span {
+        text-transform: uppercase;
+        margin-left: 34px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        margin-bottom: 4px;
+    }
 
-.burger__list {
-    color: #F16D7F;
-    margin-left: 33px;
-    list-style: none;
-    line-height: 1.7;
-}
+    &__list {
+        color: $pink-light;
+        margin-left: 33px;
+        list-style: none;
+        line-height: 1.7;
+    }
 
-.burger__title {
-    color: #F16D7F;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 17px;
-    margin-left: 33px;
-    margin-bottom: 12px;
-    margin-top: 20px;
-}
+    &__title {
+        color: $pink-light;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 33px;
+        margin-bottom: 12px;
+        margin-top: 20px;
+    }
 
-.burger-wrap {
-    display: block;
-    position: absolute;
-    width: 232px;
-    height: 764px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 5px 35px 2px rgba(34, 60, 80, 0.2);
-    transition: all 0.3s ease;
+    &__wrap {
+        display: block;
+        position: absolute;
+        width: 232px;
+        height: 764px;
+        background-color: $white-bkg;
+        box-shadow: 0px 5px 35px 2px rgba(34, 60, 80, 0.2);
+        transition: all 0.3s ease;
+    }
 }

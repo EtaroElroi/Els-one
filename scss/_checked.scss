@@ -1,0 +1,29 @@
+#check-menu:checked~.header__burger--first {
+    transform: scale(0);
+}
+
+#check-menu:checked~.header__burger--second {
+    transform: rotate(45deg);
+}
+
+#check-menu:checked~.header__burger--third {
+    transform: rotate(-45deg);
+}
+
+#check-menu:checked~.header__burger--fourth {
+    transform: scale(0);
+}
+
+#check-menu:checked~.header__burger-line {
+    background-color: $pink-light;
+}
+
+[type="radio"]:checked+.registration__member-field-label::before {
+    display: flex;
+    color: $white-bkg;
+    font-size: 25px !important;
+    font: $white-bkg;
+    content: '\2022';
+    background-color: $pink-light;
+    transition: all 0.2s ease;
+}

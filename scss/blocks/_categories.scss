@@ -1,45 +1,63 @@
 .categories {
     margin-top: 66px;
     margin-bottom: 96px;
-}
 
-.categories__menu-wrap-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-}
+    &__menu-wrap-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 
-.categories__menu-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    width: 360px;
-    height: 260px;
-    background: #C4C4C4;
-    color: #FFFFFF;
-}
+    &__menu-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 360px;
+        height: 260px;
+        background: $silver-grey;
+        color: $white-bkg;
+    }
 
-.categories__menu-item-referring {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: #FFFFFF;
-}
+    &__menu-item-referring {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: $white-bkg;
+    }
 
-.categories__menu-promotion {
-    text-transform: uppercase;
-}
+    &__menu-promotion {
+        text-transform: uppercase;
+    }
 
-.categories__menu--brand-color {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: #F16D7F;
-    text-transform: uppercase;
+    &__menu--brand-color {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $pink-light;
+        text-transform: uppercase;
+    }
+
+    &__menu-for-women {
+        background-image: url(../img/for_women.png);
+    }
+
+    &__menu-for-men {
+        background-image: url(../img/for_men.png);
+    }
+
+    &__menu-for-kids {
+        background-image: url(../img/for_kids.png);
+    }
+
+    &__menu-accessories {
+        width: 100%;
+        height: 180px;
+        background-image: url(../img/accessories.png);
+    }
 }
