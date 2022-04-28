@@ -1,0 +1,47 @@
+.intro {
+    background-color: $gray-brand;
+    height: 764px;
+
+    &__background-image {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 764px;
+        background-image: url(../img/scroll_one.png);
+        background-repeat: no-repeat;
+        background-position: -230px bottom;
+
+    }
+
+    &__title {
+        color: $black-bkg;
+        width: 509px;
+        border-left: 12px solid $pink-light;
+        padding-left: 16px;
+        margin-bottom: 45.5px;
+    }
+
+    &__title--big {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        color: $black-bkg;
+        text-transform: uppercase;
+    }
+
+    &__title--little {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        color: $black-bkg;
+        text-transform: uppercase;
+    }
+
+    &__title--brand-color {
+        color: $pink-light;
+    }
+}

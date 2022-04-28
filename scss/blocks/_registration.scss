@@ -1,0 +1,189 @@
+.registration {
+    background: #F8F3F4;
+
+    &__new {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 148px;
+    }
+
+    &__new-title {
+        text-transform: uppercase;
+        color: $pink-light;
+    }
+
+    &__member-description {
+        text-transform: uppercase;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $black;
+    }
+
+    &__member-description-advantage {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 22px;
+        color: $black;
+    }
+
+    &__member-new {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        margin-bottom: 113px;
+    }
+
+    &__member-text {
+        height: 334px;
+        width: 652px;
+    }
+
+    &__member-list {
+        margin-top: 21px;
+        list-style: none;
+        right: 15px;
+    }
+
+    &__member-item {
+        margin-bottom: 16px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $black;
+        position: relative;
+        right: -46.16px;
+
+        &::before {
+            content: url(../img/check-mark.svg);
+            position: absolute;
+            left: -46.16px;
+        }
+    }
+
+    &__member-in {
+        width: 320px;
+        height: 45px;
+        padding-left: 22px;
+        border: 1px solid #A4A4A4;
+        background: none;
+        outline: none;
+    }
+
+    &__member-field--title {
+        margin-bottom: 20.5px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black-bkg;
+    }
+
+    &__member-field-group {
+        display: flex;
+        margin-top: 31px;
+        gap: 40px;
+    }
+
+    &__member-field-label {
+        display: flex;
+        align-items: center;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: $black;
+        user-select: none;
+        cursor: pointer;
+        gap: 10px;
+
+        &::before {
+            display: flex;
+            justify-content: center;
+            content: '';
+            width: 17px;
+            height: 17px;
+            border: 1px solid $silver-grey;
+            border-radius: 50%;
+            padding: 0.2rem;
+            color: $white-bkg;
+        }
+    }
+
+    &__member-field-details {
+        margin-top: 33px;
+    }
+
+    &__member-password {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: $whiteGray;
+        margin-top: 15px;
+    }
+
+    &__member-new-data {
+        width: 344px;
+    }
+
+    &__member-join--link {
+        text-transform: uppercase;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $pink-dark;
+        border: 2px solid $pink-dark;
+        padding: 16px 29px 17px 29px;
+        text-decoration: none;
+        margin-top: 39px;
+        background: none;
+        outline: none;
+        transition: all 0.2s ease;
+
+        &:hover,
+        &:focus {
+            text-transform: uppercase;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: $white-bkg;
+            border: 2px solid $pink-dark;
+            padding: 16px 66px 17px 29px;
+            text-decoration: none;
+            background: $pink-dark;
+        }
+
+        &:hover::after,
+        &:focus::after {
+            position: absolute;
+            content: url(/img/hover/registration-arrow.svg);
+            text-transform: uppercase;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: $white-bkg;
+            text-decoration: none;
+            right: 25px;
+            outline: none;
+
+        }
+    }
+}

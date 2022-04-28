@@ -1,0 +1,59 @@
+.advantages {
+    display: flex;
+    align-items: center;
+    background-color: $darkGrey-bkg;
+    height: 341px;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 133px;
+        background-repeat: no-repeat;
+        justify-content: center;
+    }
+
+    &__item-img {
+        margin-top: 60px;
+    }
+
+    &__item-description {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        text-align: center;
+        color: $innocence-grey;
+    }
+
+    &__item-title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19.96px;
+        line-height: 24px;
+        color: $innocence-grey;
+    }
+
+    &__item-free-delivery {
+        background-position: center 0;
+        background-image: url(../img/free_delivery.svg);
+    }
+
+    &__item-sales-and-discounts {
+        background-position: center 0;
+        background-image: url(../img/sales_and_discounts.svg);
+    }
+
+    &__item-quality-assurance {
+        background-position: center 0;
+        background-image: url(../img/quality_assurance.svg);
+    }
+}

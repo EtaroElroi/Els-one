@@ -1,0 +1,94 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background: $black-bkg;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+
+    &__burger-line {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        width: 32px;
+        height: 3px;
+        background-color: $fresh-grey;
+        transition: all 0.5s ease;
+    }
+
+    &__burger {
+        position: relative;
+    }
+
+    &__burger-label {
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: -42px;
+        width: 32px;
+        height: 23px;
+        cursor: pointer;
+        z-index: 2;
+        text-transform: uppercase;
+        color: $white-bkg;
+    }
+
+    &__burger-label:hover~&__burger-line {
+        background-color: $pink-light;
+    }
+
+    &__burger--first,
+    &__burger--fourth {
+        transition: all 0.4s ease;
+    }
+
+    &__burger--second,
+    &__burger--third {
+        top: 18px;
+    }
+
+    &__burger--fourth {
+        top: 28px;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 17px 0px;
+    }
+
+    &__menu-burger {
+        display: flex;
+        align-items: center;
+    }
+
+    &__burger-icon {
+        position: absolute;
+        top: -21px;
+        right: -10px;
+    }
+
+
+    &__menu-logo-link {
+        margin-right: 33px;
+    }
+
+    &__menu-shop-link {
+        margin-left: 33px;
+    }
+
+    &__menu-account-link {
+        margin-left: 33px;
+    }
+
+    &__menu-fresh {
+        fill: $fresh-grey;
+        transition: all 0.2s ease;
+    }
+
+    &__menu-fresh:hover {
+        fill: $pink-light;
+    }
+}
