@@ -4,9 +4,14 @@
 
     &__menu-wrap-list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
+
+
+        @include tablet {
+            gap: 16px;
+        }
     }
 
     &__menu-item {
@@ -19,6 +24,19 @@
         height: 260px;
         background: $silver-grey;
         color: $white-bkg;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @include tablet {
+            width: 232.09px;
+            height: 167.62px;
+        }
+
+        @include mobile {
+            width: 100%;
+            height: 247px;
+        }
     }
 
     &__menu-item-referring {
@@ -59,5 +77,9 @@
         width: 100%;
         height: 180px;
         background-image: url(../img/accessories.png);
+
+        @include mobile {
+            height: 111px;
+        }
     }
 }

@@ -9,7 +9,8 @@ body {
 }
 
 .wrapper {
-    width: 1140px;
+    width: 71.25%;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -59,4 +60,10 @@ fieldset {
 
 #email {
     margin-bottom: 20.5px;
+}
+
+@media (max-width: $deskWidth) {
+    .wrapper {
+        width: 95%;
+    }
 }

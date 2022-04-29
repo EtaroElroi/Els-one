@@ -45,3 +45,90 @@
         color: $pink-light;
     }
 }
+
+@media (max-width: $deskWidth-bottom-edge) {
+    .intro {
+        height: 504px;
+
+        &__background-image {
+            height: 100%;
+            background-position: 20px bottom;
+            background-size: 500px;
+        }
+
+        &__title {
+            width: auto;
+        }
+
+        &__title--big {
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+        &__title--little {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+
+@media (max-width: $tabWidth-edge) {
+    .intro {
+        max-width: 100%;
+
+        &__background-image {
+            height: 100%;
+            background-position: -70px bottom;
+        }
+    }
+}
+
+@media (max-width: $tabWidth-min) {
+    .intro {
+
+        &__background-image {
+            background-image: none;
+            justify-content: center;
+            height: 100%;
+            background-position: -110px bottom;
+        }
+
+
+    }
+}
+
+@media (max-width: $mobWidth-max) {
+    .intro {
+
+        &__background-image {
+            height: 100%;
+            background-image: none;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: $mobWidth) {
+
+    .intro {
+        max-width: 375px;
+        min-height: 363px;
+
+        &__background-image {
+            background-image: none;
+            justify-content: center;
+        }
+
+        &__title--big {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        &__title--little {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}

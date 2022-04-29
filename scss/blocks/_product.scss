@@ -28,7 +28,6 @@
         justify-content: space-between;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 30px;
         list-style: none;
     }
 
@@ -59,6 +58,8 @@
     }
 
     &__item {
+        margin-right: 0px;
+        margin-bottom: 14px;
         width: 360px;
         height: 581px;
         background: $clean-grey;
@@ -156,5 +157,29 @@
             display: block;
             opacity: 1;
         }
+    }
+}
+
+@media (max-width: $deskWidth-bottom-edge) {
+
+    .product {
+
+        &__list {
+            justify-content: center;
+
+        }
+
+    }
+}
+
+@media (max-width: $tabWidth-edge) {
+
+    .product {
+        margin-bottom: 95px;
+
+        &__list {
+            justify-content: space-between;
+        }
+
     }
 }

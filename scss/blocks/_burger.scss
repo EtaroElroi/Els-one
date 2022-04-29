@@ -62,3 +62,24 @@
         transition: all 0.3s ease;
     }
 }
+
+@media (max-width: $deskWidth-bottom-edge) {
+
+    .burger {
+        display: none;
+    }
+}
+
+@media (max-width: $tabWidth-edge) {
+
+    .burger {
+        display: none;
+    }
+}
+
+@media (max-width: $tabWidth) {
+
+    .burger {
+        display: none;
+    }
+}
