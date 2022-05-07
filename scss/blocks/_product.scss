@@ -1,4 +1,7 @@
 .product {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin-bottom: 95px;
 
     &__title {
@@ -27,7 +30,6 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        flex-direction: row;
         list-style: none;
     }
 
@@ -58,8 +60,7 @@
     }
 
     &__item {
-        margin-right: 0px;
-        margin-bottom: 14px;
+        margin-bottom: 18px;
         width: 360px;
         height: 581px;
         background: $clean-grey;
@@ -160,26 +161,34 @@
     }
 }
 
-@media (max-width: $deskWidth-bottom-edge) {
+@media (max-width: $Width-bgn) {
 
     .product {
 
         &__list {
             justify-content: center;
-
+            gap: 9.5px;
         }
+    }
+}
 
+
+@media (width: $tabWidth-edge) {
+
+    .product {
+
+        &__list {
+            gap: 9.5px;
+        }
     }
 }
 
 @media (max-width: $tabWidth-edge) {
 
     .product {
-        margin-bottom: 95px;
 
-        &__list {
-            justify-content: space-between;
+        &__item {
+            margin-bottom: 16px;
         }
-
     }
 }

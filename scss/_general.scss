@@ -67,3 +67,43 @@ fieldset {
         width: 95%;
     }
 }
+
+#place-address {
+    margin-bottom: 20px;
+}
+
+#state-address {
+    margin-bottom: 20px;
+}
+
+#postcode {
+    margin-bottom: 23px;
+}
+
+.item-price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #F16D7F;
+}
+
+.item-color {
+    color: $ash-color;
+}
+
+.item-size {
+    color: $ash-color;
+}
+
+.item-quantity {
+    color: $ash-color;
+    padding: 15px;
+    border: 1px solid $FolkArt-color;
+    padding-top: 0.58px;
+    padding-bottom: 1.5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 24px;
+}

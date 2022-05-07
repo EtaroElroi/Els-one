@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coldmark</title>
+    <title>Cold shopping cart</title>
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,219 +56,103 @@
                 </div>
             </div>
         </div>
-        <div class="burger">
-            <div class="burger__wrap">
-                <nav class="burger__menu">
-                    <h1 class="burger__item burger__item--span">menu</h1>
-                    <div>
-                        <h2 class="burger__title">man</h2>
-                        <ul class="burger__list">
-                            <li class="burger__item"><a href="">Accessories</a></li>
-                            <li class="burger__item"><a href="">Bags</a></li>
-                            <li class="burger__item"><a href="">Denim</a></li>
-                            <li class="burger__item"><a href="">T-Shirts</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="burger__title">women</h2>
-                        <ul class="burger__list">
-                            <li class="burger__item"><a href="">Accessories</a></li>
-                            <li class="burger__item"><a href="">Bags</a></li>
-                            <li class="burger__item"><a href="">Denim</a></li>
-                            <li class="burger__item"><a href="">T-Shirts</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="burger__title">kids</h2>
-                        <ul class="burger__list">
-                            <li class="burger__item"><a href="">Accessories</a></li>
-                            <li class="burger__item"><a href="">Bags</a></li>
-                            <li class="burger__item"><a href="">Denim</a></li>
-                            <li class="burger__item"><a href="">T-Shirts</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
     </header>
 
-    <section class="intro">
-        <h2 class="visually-hidden"></h2>
-        <div class="intro__background-image wrapper">
-            <h1 class="intro__title">
-                <span class="intro__title--big">the brand</span> <br>
-                <span class="intro__title--little">of luxerious <span class="intro__title--brand-color">
-                        fashion</span></span>
-            </h1>
+    <section class="shopping-cart">
+        <div class="wrapper shopping-cart__new">
+            <h1 class="shopping-cart__title">shopping cart</h1>
         </div>
     </section>
 
-    <section class="categories">
+    <section class="shopping-cart__member">
         <h2 class="visually-hidden"></h2>
-        <nav class="categories__menu">
-            <ul class="categories__menu-wrap-list wrapper">
-                <li class="categories__menu-item categories__menu-for-women">
-                    <a class="categories__menu-item-referring" href="#">
-                        <p class="categories__menu-promotion">30% off</p>
-                        <h2 class="categories__menu--brand-color">for women</h2>
-                    </a>
-                </li>
-                <li class="categories__menu-item categories__menu-for-men">
-                    <a class="categories__menu-item-referring" href="#">
-                        <p class="categories__menu-promotion">hot deal</p>
-                        <h2 class="categories__menu--brand-color">for men</h2>
-                    </a>
-                </li>
-                <li class="categories__menu-item categories__menu-for-kids">
-                    <a class="categories__menu-item-referring" href="#">
-                        <p class="categories__menu-promotion">new arrivals</p>
-                        <h2 class="categories__menu--brand-color">for kids</h2>
-                    </a>
-                </li>
-                <li class="categories__menu-item categories__menu-accessories">
-                    <a class="categories__menu-item-referring" href="#">
-                        <p class="categories__menu-promotion">Luxirous & Trendy</p>
-                        <h2 class="categories__menu--brand-color">Accesories</h2>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </section>
+        <div class="wrapper shopping-cart__member-new">
+            <div class="shopping-cart__member-new-product">
+                <div class="shopping-cart__item-text">
+                    <img src="img/cart_hoody.png" alt="jacket" class="shopping-cart__item--img">
+                    <div class="shopping-cart__item-detail">
+                        <div class="shopping-cart__item-wrap">
+                            <h3 class="shopping-cart__item-title">mango people <br> t-shirt</h3>
+                            <img src="/img/cart-close.svg" alt="delete" class="shopping-cart__img-item-delete">
+                        </div>
+                        <ul class="shopping-cart__list-description">
+                            <li class="shopping-cart__item-description">Price: <span class="item-price">$300</span></li>
+                            <li class="shopping-cart__item-description">Color: <span class="item-color">Red</span></li>
+                            <li class="shopping-cart__item-description">Size: <span class="item-size">Xl</span></li>
+                            <li class="shopping-cart__item-description">Quantity: <span class="item-quantity">2</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="shopping-cart__item-text">
+                    <img src="img/cart_plaid-shirt.png" alt="jacket" class="shopping-cart__item--img">
+                    <div class="shopping-cart__item-detail">
+                        <div class="shopping-cart__item-wrap">
+                            <h3 class="shopping-cart__item-title">mango people <br> t-shirt</h3>
+                            <img src="/img/cart-close.svg" alt="delete" class="shopping-cart__img-item-delete">
+                        </div>
+                        <ul class="shopping-cart__list-description">
+                            <li class="shopping-cart__item-description">Price: <span class="item-price">$300</span></li>
+                            <li class="shopping-cart__item-description">Color: <span class="item-color">Red</span></li>
+                            <li class="shopping-cart__item-description">Size: <span class="item-size">Xl</span></li>
+                            <li class="shopping-cart__item-description">Quantity: <span class="item-quantity">2</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="shopping-cart__member-new-button-command">
+                    <button class="shopping-cart__member-new-button">clear shopping cart</button>
+                    <button class="shopping-cart__member-new-button">continue shopping</button>
+                </div>
+            </div>
 
-    <section class="product">
-        <div class="wrapper">
-            <h2 class="product__title">Featured Items</h2>
-            <p class="product__title-description">Shop for items based on what we featured in this week</p>
-            <nav>
-                <ul class="product__list">
-                    <li class="product__item">
-                        <div class="product__item-opacity">
-                            <div class="product__item-img"><img src="img/jacket.png" alt="jacket"></div>
-                            <button class="product__item-button-card product__item-button-card--link">Add to
-                                Cart</button>
-                        </div>
-                        <div class="product__item-wrap-text">
-                            <h3 class="product__item-title">ELLERY X M'O CAPSULE</h3>
-                            <p class="product__item-description">Known for her sculptural takes on traditional
-                                tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="product__item-price">$52.00</p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item-opacity">
-                            <div class="product__item-img"><img src="img/dresses.png" alt="dresses"></div>
-                            <button class="product__item-button-card product__item-button-card--link">Add to
-                                Cart</button>
-                        </div>
-                        <div class="product__item-wrap-text">
-                            <h3 class="product__item-title">ELLERY X M'O CAPSULE</h3>
-                            <p class="product__item-description">Known for her sculptural takes on traditional
-                                tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="product__item-price">$52.00</p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item-opacity">
-                            <div class="product__item-img"><img src="img/hoody.jpg" alt="hoody"></div>
-                            <button class="product__item-button-card product__item-button-card--link">Add to
-                                Cart</button>
-                        </div>
-                        <div class="product__item-wrap-text">
-                            <h3 class="product__item-title">ELLERY X M'O CAPSULE</h3>
-                            <p class="product__item-description">Known for her sculptural takes on traditional
-                                tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="product__item-price">$52.00</p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item-opacity">
-                            <div class="product__item-img"><img src="img/t-shirt.png" alt="t-shirt"></div>
-                            <button class="product__item-button-card product__item-button-card--link">Add to
-                                Cart</button>
-                        </div>
-                        <div class="product__item-wrap-text">
-                            <h3 class="product__item-title">ELLERY X M'O CAPSULE</h3>
-                            <p class="product__item-description">Known for her sculptural takes on traditional
-                                tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="product__item-price">$52.00</p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item-opacity">
-                            <div class="product__item-img"><img src="img/suit_jacket.png" alt="suit_jacket"></div>
-                            <button class="product__item-button-card product__item-button-card--link">Add to
-                                Cart</button>
-                        </div>
-                        <div class="product__item-wrap-text">
-                            <h3 class="product__item-title">ELLERY X M'O CAPSULE</h3>
-                            <p class="product__item-description">Known for her sculptural takes on traditional
-                                tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="product__item-price">$52.00</p>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__item-opacity">
-                            <div class="product__item-img"><img src="img/women's_shirt.png" alt="women's_shirt"></div>
-                            <button class="product__item-button-card product__item-button-card--link">Add to
-                                Cart</button>
-                        </div>
-                        <div class="product__item-wrap-text">
-                            <h3 class="product__item-title">ELLERY X M'O CAPSULE</h3>
-                            <p class="product__item-description">Known for her sculptural takes on traditional
-                                tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="product__item-price">$52.00</p>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="product__button-catalog">
-            <button href="catalog.html" class="product__button-catalog-link">Browse
-                All
-                Product
-            </button>
-        </div>
-    </section>
+            <div class="shopping-cart__member-text">
+                <form action="#" class="shopping-cart__member-form">
+                    <fieldset class="shopping-cart__member-field">
+                        <legend class="shopping-cart__member-field--title">shipping adress</legend>
 
-    <section class="advantages">
-        <h2 class="visually-hidden"></h2>
-        <ul class="wrapper advantages__wrap">
-            <li class="advantages__item advantages__item-free-delivery">
-                <p class="advantages__item-img">
-                <h3 class="advantages__item-title">Free Delivery</h3> <br><span
-                    class="advantages__item-description">Worldwide
-                    delivery
-                    on
-                    all. Authorit tively morph next-generation innov tion with extensive models.</span>
-                <p>
-            </li>
-            <li class="advantages__item advantages__item-sales-and-discounts">
-                <p class="advantages__item-img">
-                <h3 class="advantages__item-title">Sales & discounts</h3> <br><span
-                    class="advantages__item-description">Worldwide
-                    delivery on all. Authorit tively morph next-generation innov tion with extensive models.</span>
-                <p>
-            </li>
-            <li class="advantages__item advantages__item-quality-assurance">
-                <p class="advantages__item-img">
-                <h3 class="advantages__item-title">Quality assurance</h3> <br><span
-                    class="advantages__item-description">Worldwide
-                    delivery on all. Authorit tively morph next-generation innov tion with extensive models.</span>
-                <p>
-            </li>
-        </ul>
+                        <p>
+                            <input type="text" id="place-address"
+                                class="shopping-cart__member-in shopping-cart__member-in--placeholder-span"
+                                placeholder="Bangladesh" aria-label="Place-address">
+                            <label for="first-name" class="visually-hidden">First Name</label>
+                        </p>
+
+                        <p>
+                            <input type="text" id="state-address" class="shopping-cart__member-in" placeholder="State"
+                                aria-label="State">
+                            <label for="second-name" class="visually-hidden">Last Name</label>
+                        </p>
+
+                        <p>
+                            <input type="text" id="postcode" class="shopping-cart__member-in"
+                                placeholder="Postcode / Zip" aria-label="Postcode">
+                            <label for="second-name" class="visually-hidden">Last Name</label>
+                        </p>
+
+                        <button class="shopping-cart__button-request">get a quote</button>
+                    </fieldset>
+
+                    <div class="shopping-cart__make-order">
+                        <div class="shopping-cart__make-order-wrap">
+                            <div class="shopping-cart__make-order-sub">
+                                <p class="">sub total</p>
+                                <p class="">$900</p>
+                            </div>
+                            <div class="shopping-cart__make-order-total">
+                                <p class="shopping-cart__make-order-total--text">grand total</p>
+                                <p class="shopping-cart__make-order-total--price">$900</p>
+                            </div>
+                            <div class="shopping-cart__button-wrap">
+                                <div class="shopping-cart__border"></div>
+                                <button href="#" class="shopping-cart__button-link">proceed to
+                                    checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -277,7 +161,8 @@
             <div class="wrapper subscribe__wrap">
                 <div class="subscribe__slogan subscribe__intersect">
                     <p class="subscribe__slogan-title">
-                    <h3 class="subscribe__slogan-description">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                    <h3 class="subscribe__slogan-description">“Vestibulum quis porttitor dui!
+                        Quisque viverra nunc mi, a
                         pulvinar purus condimentum“
                         <p>
                 </div>
@@ -297,6 +182,7 @@
         </section>
 
         <section class="features">
+            <h2 class="visually-hidden"></h2>
             <div class="wrapper features__wrap">
                 <div class="features__copyright">
                     <p>&copy 2021 Brand All Rights Reserved.</p>
