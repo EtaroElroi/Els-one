@@ -1,9 +1,3 @@
-// @mixin tablet-prod-min {
-//     @media (max-width: $Width-middle) {
-//         @content;
-//     }
-// }
-
 @mixin tablet-prod-min {
     @media (min-width: $Width-middle) {
         @content;

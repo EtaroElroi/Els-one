@@ -169,6 +169,22 @@
     }
 }
 
+@media (width: $deskWidth-bottom-edge) {
+
+    .categories {
+
+        &__menu-item {
+            width: 340px;
+            height: 250px;
+        }
+
+        &__menu-accessories {
+            width: 100%;
+            height: 180px;
+        }
+    }
+}
+
 @media (width: $Width-middle) {
 
     .categories {
