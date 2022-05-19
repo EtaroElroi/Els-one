@@ -49,3 +49,42 @@
         fill: $black;
     }
 }
+
+@media (max-width: $mobWidth) {
+
+    .features {
+
+        &__wrap {
+            flex-direction: column-reverse;
+            height: 143px;
+        }
+
+        &__social-list {
+            margin-top: 43px;
+        }
+
+        &__copyright {
+            margin-bottom: 9px;
+        }
+    }
+}
+
+@media (max-width: $mobWidth-max) {
+
+    .features {
+
+        &__wrap {
+            flex-direction: column-reverse;
+            height: 143px;
+        }
+
+        &__social-list {
+            margin-top: 43px;
+        }
+
+        &__copyright {
+            text-align: center;
+            margin-bottom: 9px;
+        }
+    }
+}

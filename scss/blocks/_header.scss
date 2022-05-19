@@ -92,3 +92,16 @@
         fill: $pink-light;
     }
 }
+
+@media (max-width: $tabWidth) {
+
+    .header {
+        &__menu-account-link {
+            display: none;
+        }
+
+        &__menu-shop-link {
+            display: none;
+        }
+    }
+}

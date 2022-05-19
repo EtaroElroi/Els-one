@@ -41,6 +41,8 @@
     }
 
     &__member-text {
+        display: flex;
+        flex-direction: column;
         height: 334px;
         width: 652px;
     }
@@ -48,7 +50,6 @@
     &__member-list {
         margin-top: 21px;
         list-style: none;
-        right: 15px;
     }
 
     &__member-item {
@@ -172,7 +173,7 @@
         &:hover::after,
         &:focus::after {
             position: absolute;
-            content: url(/img/hover/registration-arrow.svg);
+            content: url(../img/hover/registration-arrow.svg);
             text-transform: uppercase;
             font-family: Lato;
             font-style: normal;
@@ -185,5 +186,69 @@
             outline: none;
 
         }
+    }
+}
+
+@media (max-width: $tabWidth-edge) {
+
+    .registration {
+
+        &__member-text {
+            margin-left: 22px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__member-list {
+            width: 312px;
+            height: 201.19px;
+        }
+
+        &__member-item {
+            right: -46.16px;
+            font-size: 16px;
+            line-height: 19px
+        }
+
+    }
+}
+
+@media (max-width: $mobWidth) {
+
+    .registration {
+
+        &__new {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__member-new {
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 8px;
+
+        }
+
+        &__member-description {
+            margin-top: 40px;
+        }
+
+        &__member-description-advantage {
+            width: 358px;
+        }
+
+        &__member-new-data {
+            padding-left: 8px;
+        }
+
+        &__member-text {
+            width: 344px;
+            margin-left: 8px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
     }
 }

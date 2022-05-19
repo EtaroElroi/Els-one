@@ -1,12 +1,13 @@
 .subscribe {
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../img/photo_subscribe.jpg);
+    background-image: url(../img/photo_subscribe.png);
     background-size: 100%;
 
     &__wrap {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         height: 448px;
     }
@@ -117,6 +118,66 @@
             border: 1px solid $pink-dark;
             opacity: 0.9;
             outline: none;
+        }
+    }
+}
+
+@media (max-width: $deskWidth-bottom-edge) {
+
+    .subscribe {
+
+        &__wrap {
+            height: 693px;
+        }
+
+        &__slogan {
+            margin-top: 53.59px;
+        }
+    }
+}
+
+@media (max-width: $tabWidth-edge) {
+
+    .subscribe {
+        background-repeat: no-repeat;
+        background-image: $subImg;
+        background-position-y: 100%;
+        background-color: $ford-gunpowder-gray;
+
+        &__wrap {
+            height: 693px;
+        }
+
+        &__form {
+            width: 557px;
+            height: 137px;
+        }
+
+        &__slogan {
+            margin-top: 53.59px;
+        }
+    }
+}
+
+@media (max-width: $mobWidth) {
+
+    .subscribe {
+        background-repeat: no-repeat;
+        background-image: url(../img/photo_subscribe.png);
+        background-position-y: 100%;
+        background-color: $ford-gunpowder-gray;
+
+        &__wrap {
+            height: 693px;
+        }
+
+        &__form {
+            width: 341px;
+            height: 137px;
+        }
+
+        &__slogan {
+            margin-top: 53.59px;
         }
     }
 }

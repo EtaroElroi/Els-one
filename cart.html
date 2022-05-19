@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cold registration</title>
+    <title>Cold shopping cart</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -53,81 +53,99 @@
         </div>
     </header>
 
-    <section class="registration">
-        <div class="wrapper registration__new">
-            <h1 class="registration__new-title">registration</h1>
+    <section class="shopping-cart">
+        <div class="wrapper shopping-cart__new">
+            <h1 class="shopping-cart__title">shopping cart</h1>
         </div>
     </section>
 
-    <section class="registration__member">
+    <section class="shopping-cart__member">
         <h2 class="visually-hidden"></h2>
-        <div class="wrapper registration__member-new">
-            <div class="registration__member-new-data">
-                <form action="#" class="registration__member-form">
-                    <fieldset class="registration__member-field">
-                        <legend class="registration__member-field--title">Your Name</legend>
+        <div class="wrapper shopping-cart__member-new">
+            <div class="shopping-cart__member-new-product">
+                <div class="shopping-cart__item-text">
+                    <img src="img/cart_hoody.png" alt="jacket" class="shopping-cart__item--img">
+                    <div class="shopping-cart__item-detail">
+                        <div class="shopping-cart__item-wrap">
+                            <h3 class="shopping-cart__item-title">mango people <br> t-shirt</h3>
+                            <img src="img/cart-close.svg" alt="delete" class="shopping-cart__img-item-delete">
+                        </div>
+                        <ul class="shopping-cart__list-description">
+                            <li class="shopping-cart__item-description">Price: <span class="item-price">$300</span></li>
+                            <li class="shopping-cart__item-description">Color: <span class="item-color">Red</span></li>
+                            <li class="shopping-cart__item-description">Size: <span class="item-size">Xl</span></li>
+                            <li class="shopping-cart__item-description">Quantity: <span class="item-quantity">2</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="shopping-cart__item-text">
+                    <img src="img/cart_plaid-shirt.png" alt="jacket" class="shopping-cart__item--img">
+                    <div class="shopping-cart__item-detail">
+                        <div class="shopping-cart__item-wrap">
+                            <h3 class="shopping-cart__item-title">mango people <br> t-shirt</h3>
+                            <img src="img/cart-close.svg" alt="delete" class="shopping-cart__img-item-delete">
+                        </div>
+                        <ul class="shopping-cart__list-description">
+                            <li class="shopping-cart__item-description">Price: <span class="item-price">$300</span></li>
+                            <li class="shopping-cart__item-description">Color: <span class="item-color">Red</span></li>
+                            <li class="shopping-cart__item-description">Size: <span class="item-size">Xl</span></li>
+                            <li class="shopping-cart__item-description">Quantity: <span class="item-quantity">2</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="shopping-cart__member-new-button-command">
+                    <button class="shopping-cart__member-new-button">clear shopping cart</button>
+                    <button class="shopping-cart__member-new-button">continue shopping</button>
+                </div>
+            </div>
+
+            <div class="shopping-cart__member-text">
+                <form action="#" class="shopping-cart__member-form">
+                    <fieldset class="shopping-cart__member-field">
+                        <legend class="shopping-cart__member-field--title">shipping adress</legend>
 
                         <p>
-                            <input type="text" id="first-name" class="registration__member-in" placeholder="First Name"
-                                aria-label="Name">
+                            <input type="text" id="place-address"
+                                class="shopping-cart__member-in shopping-cart__member-in--placeholder-span"
+                                placeholder="Bangladesh" aria-label="Place-address">
                             <label for="first-name" class="visually-hidden">First Name</label>
                         </p>
 
                         <p>
-                            <input type="text" id="second-name" class="registration__member-in" placeholder="Last Name"
-                                aria-label="Surname">
+                            <input type="text" id="state-address" class="shopping-cart__member-in" placeholder="State"
+                                aria-label="State">
                             <label for="second-name" class="visually-hidden">Last Name</label>
                         </p>
 
-                        <div class="registration__member-field-group">
-                            <input type="radio" id="male" value="Male" name="gender"
-                                class="registration__member-field-gender">
-                            <label for="male" class="registration__member-field-label">Male</label>
+                        <p>
+                            <input type="text" id="postcode" class="shopping-cart__member-in"
+                                placeholder="Postcode / Zip" aria-label="Postcode">
+                            <label for="second-name" class="visually-hidden">Last Name</label>
+                        </p>
 
-                            <input type="radio" id="female" value="Female" name="gender"
-                                class="registration__member-field-gender">
-                            <label for="female" class="registration__member-field-label">Female</label>
+                        <button class="shopping-cart__button-request">get a quote</button>
+                    </fieldset>
+
+                    <div class="shopping-cart__make-order">
+                        <div class="shopping-cart__make-order-wrap">
+                            <div class="shopping-cart__make-order-sub">
+                                <p class="">sub total</p>
+                                <p class="">$900</p>
+                            </div>
+                            <div class="shopping-cart__make-order-total">
+                                <p class="shopping-cart__make-order-total--text">grand total</p>
+                                <p class="shopping-cart__make-order-total--price">$900</p>
+                            </div>
+                            <div class="shopping-cart__button-wrap">
+                                <div class="shopping-cart__border"></div>
+                                <button href="#" class="shopping-cart__button-link">proceed to
+                                    checkout</button>
+                            </div>
                         </div>
-                    </fieldset>
-
-                    <fieldset class="registration__member-field-details">
-                        <legend class="registration__member-field--title">Login details</legend>
-
-                        <p>
-                            <input type="email" id="email" class="registration__member-in" placeholder="Email"
-                                aria-label="you-email">
-                            <label for="email" class="visually-hidden">Email</label>
-                        </p>
-
-                        <p>
-                            <input type="password" id="password" class="registration__member-in" placeholder="Password"
-                                aria-label="you-password">
-                            <label for="password" class="visually-hidden">Password</label>
-                        </p>
-                    </fieldset>
-
-                    <p class="registration__member-password">Please use 8 or more characters, with at least 1 number and
-                        a
-                        mixture of uppercase and lowercase letters</p>
-
+                    </div>
                 </form>
-
-                <button type="submit" class="registration__member-join--link rel">join now</button>
-            </div>
-
-            <div class="registration__member-text">
-                <h2 class="registration__member-description">Loyalty has its perks</h2>
-                <p class="registration__member-description-advantage">Get in on the loyalty program where you can
-                    earn points and
-                    unlock serious perks. Starting with these
-                    as soon as you join:</p>
-                <ul class="registration__member-list">
-                    <li class="registration__member-item">15% off welcome offer</li>
-                    <li class="registration__member-item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="registration__member-item">$10 off a purchase on your birthday</li>
-                    <li class="registration__member-item">Early access to products</li>
-                    <li class="registration__member-item">Exclusive offers & rewards</li>
-                </ul>
             </div>
         </div>
     </section>
@@ -138,7 +156,8 @@
             <div class="wrapper subscribe__wrap">
                 <div class="subscribe__slogan subscribe__intersect">
                     <p class="subscribe__slogan-title">
-                    <h3 class="subscribe__slogan-description">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                    <h3 class="subscribe__slogan-description">“Vestibulum quis porttitor dui!
+                        Quisque viverra nunc mi, a
                         pulvinar purus condimentum“
                         <p>
                 </div>
